@@ -1,0 +1,259 @@
+@use 'var'
+@use 'mixin'
+
+*
+    font-family: Georgia, 'Times New Roman', Times, serif
+    padding: 0
+    margin: 0 auto
+    box-sizing: border-box
+
+body
+    .space
+        padding: 15px
+
+    a , button
+        padding: 25px
+        display: flex
+        justify-content: flex-start
+        font-size: medium
+    
+    a
+        text-decoration: none
+        color: var.$color_3
+    
+    a:hover
+        color: var.$color_1
+        transition: 0.6s   
+
+.navbar
+    @include mixin.flex-center
+    letter-spacing: 1px
+    border: 1px solid #000
+    background: #000
+    height: 5em
+    
+    h2
+        color: var.$color_1
+        letter-spacing: 5px
+
+        i
+            padding: 10px
+
+    h2:hover
+        color: var.$color_3
+        transition: 0.6s
+        cursor: pointer
+
+    .space
+        padding: 15px
+
+    a , button
+        padding: 25px
+        display: flex
+        justify-content: flex-start
+        font-size: medium
+    
+    a
+        text-decoration: none
+        color: var.$color_3
+    
+    a:hover
+        color: var.$color_1
+        transition: 0.6s    
+
+#type1
+    background: var.$color_1
+    border-radius: 5px
+    padding: 10px
+    color: var.$color_3
+
+#type1:hover
+    transition: 0.6s
+    background: var.$color_2
+    color: var.$color_1
+    border: 2px solid var.$color_1
+
+#type2
+    color: var.$color_3
+    background: var.$color_2
+    border-radius: 5px
+    padding: 10px
+    border: 2px solid var.$color_3
+
+#type2:hover
+    transition: 0.6s
+    background: var.$color_2
+    color: var.$color_1
+    border: 2px solid var.$color_1
+
+.intro
+    @include mixin.bg-img('imagem1.jpg')
+    @include mixin.medida
+    @include mixin.flex-center
+    background-attachment: fixed
+    text-align: center
+    justify-content: center
+
+    div
+        color: var.$color_3
+        font-size: 25px
+        letter-spacing: 5px
+
+    section
+        display: flex
+        justify-content: center
+        margin:50px
+
+        button
+            align-items: center
+    
+        i
+            padding: 8px
+            align-items: center
+
+.content
+    margin: 0 auto
+    text-align: center
+    display: flex
+    flex-wrap: wrap
+    background-image: linear-gradient(45deg,var.$color_1,var.$color_4)
+    @include mixin.animations
+    color: #fff
+    
+    #cartoes
+        @include mixin.flex-center
+        margin:0 auto
+        flex-wrap: wrap
+        
+        .cards
+            border: 1px solid #000
+            height: 20em
+            width: 20em
+            margin: 20px
+
+            h2
+                margin: 20px
+                
+            i
+                margin: 20px
+            
+            p
+                @include mixin.flex-center
+                width: 80%
+                                
+    #button
+        @include mixin.flex-center
+        height: 80px
+  
+.jobs-container
+    background-image: linear-gradient(45deg,#ffffff,#857f7f)
+    @include mixin.animations
+    height: 100vh
+    padding: 3rem
+    
+    .texto
+        color: var.$color_2
+        text-align: center
+    
+    .job-list
+        padding: 2rem 0
+        display: flex
+    
+    .first-job
+        width: 30%
+        height: 415px
+        margin:0 2%
+        background-image: url('../img/imagem2.png')
+        position: relative
+        cursor: pointer
+        transition: .5s
+        @extend %bg-center
+        @extend %card-hover
+        
+
+    .others-jobs-container
+        display: flex
+        flex-wrap: wrap
+        width: 68%
+
+        .card-job
+            width: 46%
+            height: 200px
+            position: relative
+            cursor: pointer
+            margin-bottom: 15px
+            margin-right: 15px
+            @extend %bg-center
+            @extend %card-hover
+
+            
+        #job-2
+            background-image: url('../img/imagem6.png')
+        
+        #job-3
+            background-image: url('../img/imagem3')
+        
+        #job-4
+            background-image: url('../img/imagem4.jpg')
+        
+        #job-5
+            background-image: url('../img/imagem5')
+
+            
+    .job-card-cover
+        padding-top: 1.75rem
+        background-color: rgba(0, 0, 0, .6)
+        border: 3px solid var.$color_1
+        color: var.$color_3
+        width: 100%
+        height: 100%
+
+        .job-card-tittle
+            @include mixin.flex-center
+            padding: 0.5em
+
+        .job-card-description
+            @include mixin.flex-center
+        
+footer
+    background: var.$color_4
+    @include mixin.animations
+
+    .footer
+        display: flex
+        justify-content: space-between
+
+        #grow
+            width: 30%
+            height: 350px
+            text-align: center
+            display: flex
+            flex-direction: column
+
+
+        div
+            
+            h2
+                margin: 20px 
+                color: var.$color_3
+
+            a
+                padding: 15px
+                text-decoration: none
+                color: var.$color_2
+    
+            a:hover
+                color: var.$color_3
+                transition: 0.6s   
+    
+    .icons
+        font-size: 25px
+        margin-top: 120px
+
+        i
+            margin: 15px
+        
+        i:hover
+            transition: 0.6s
+            cursor: pointer
+            color: var.$color_3

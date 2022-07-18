@@ -1,0 +1,303 @@
+.jobs-container .first-job, .jobs-container .others-jobs-container .card-job {
+  background-position: center;
+  background-size: cover;
+}
+
+.jobs-container .first-job .job-card-tittle, .jobs-container .others-jobs-container .card-job .job-card-tittle, .jobs-container .first-job .job-card-cover, .jobs-container .others-jobs-container .card-job .job-card-cover, .jobs-container .first-job .job-card-description, .jobs-container .others-jobs-container .card-job .job-card-description {
+  opacity: 0;
+}
+.jobs-container .first-job:hover .job-card-tittle, .jobs-container .others-jobs-container .card-job:hover .job-card-tittle, .jobs-container .first-job:hover .job-card-cover, .jobs-container .others-jobs-container .card-job:hover .job-card-cover, .jobs-container .first-job:hover .job-card-description, .jobs-container .others-jobs-container .card-job:hover .job-card-description {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+@keyframes colorss {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body .space {
+  padding: 15px;
+}
+body a, body button {
+  padding: 25px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: medium;
+}
+body a {
+  text-decoration: none;
+  color: #ffffff;
+}
+body a:hover {
+  color: #f14400;
+  transition: 0.6s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+  border: 1px solid #000;
+  background: #000;
+  height: 5em;
+}
+.navbar h2 {
+  color: #f14400;
+  letter-spacing: 5px;
+}
+.navbar h2 i {
+  padding: 10px;
+}
+.navbar h2:hover {
+  color: #ffffff;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.navbar .space {
+  padding: 15px;
+}
+.navbar a, .navbar button {
+  padding: 25px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: medium;
+}
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navbar a:hover {
+  color: #f14400;
+  transition: 0.6s;
+}
+
+#type1 {
+  background: #f14400;
+  border-radius: 5px;
+  padding: 10px;
+  color: #ffffff;
+}
+
+#type1:hover {
+  transition: 0.6s;
+  background: #000000;
+  color: #f14400;
+  border: 2px solid #f14400;
+}
+
+#type2 {
+  color: #ffffff;
+  background: #000000;
+  border-radius: 5px;
+  padding: 10px;
+  border: 2px solid #ffffff;
+}
+
+#type2:hover {
+  transition: 0.6s;
+  background: #000000;
+  color: #f14400;
+  border: 2px solid #f14400;
+}
+
+.intro {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/imagem1.jpg");
+  width: 100%;
+  height: 99vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  text-align: center;
+  justify-content: center;
+}
+.intro div {
+  color: #ffffff;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.intro section {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+.intro section button {
+  align-items: center;
+}
+.intro section i {
+  padding: 8px;
+  align-items: center;
+}
+
+.content {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(45deg, #f14400, #5a5757);
+  background-size: 300% 300%;
+  animation: colorss 6s ease infinite;
+  color: #fff;
+}
+.content #cartoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.content #cartoes .cards {
+  border: 1px solid #000;
+  height: 20em;
+  width: 20em;
+  margin: 20px;
+}
+.content #cartoes .cards h2 {
+  margin: 20px;
+}
+.content #cartoes .cards i {
+  margin: 20px;
+}
+.content #cartoes .cards p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.content #button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.jobs-container {
+  background-image: linear-gradient(45deg, #ffffff, #857f7f);
+  background-size: 300% 300%;
+  animation: colorss 6s ease infinite;
+  height: 100vh;
+  padding: 3rem;
+}
+.jobs-container .texto {
+  color: #000000;
+  text-align: center;
+}
+.jobs-container .job-list {
+  padding: 2rem 0;
+  display: flex;
+}
+.jobs-container .first-job {
+  width: 30%;
+  height: 415px;
+  margin: 0 2%;
+  background-image: url("../img/imagem2.png");
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.jobs-container .others-jobs-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 68%;
+}
+.jobs-container .others-jobs-container .card-job {
+  width: 46%;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+.jobs-container .others-jobs-container #job-2 {
+  background-image: url("../img/imagem6.png");
+}
+.jobs-container .others-jobs-container #job-3 {
+  background-image: url("../img/imagem3");
+}
+.jobs-container .others-jobs-container #job-4 {
+  background-image: url("../img/imagem4.jpg");
+}
+.jobs-container .others-jobs-container #job-5 {
+  background-image: url("../img/imagem5");
+}
+.jobs-container .job-card-cover {
+  padding-top: 1.75rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 3px solid #f14400;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+.jobs-container .job-card-cover .job-card-tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+}
+.jobs-container .job-card-cover .job-card-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: #5a5757;
+  background-size: 300% 300%;
+  animation: colorss 6s ease infinite;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer #grow {
+  width: 30%;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer div h2 {
+  margin: 20px;
+  color: #ffffff;
+}
+footer .footer div a {
+  padding: 15px;
+  text-decoration: none;
+  color: #000000;
+}
+footer .footer div a:hover {
+  color: #ffffff;
+  transition: 0.6s;
+}
+footer .icons {
+  font-size: 25px;
+  margin-top: 120px;
+}
+footer .icons i {
+  margin: 15px;
+}
+footer .icons i:hover {
+  transition: 0.6s;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */
